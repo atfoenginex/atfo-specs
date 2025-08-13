@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
-  s.name         = 'ATFOGroMoreAdapter'
+  s.name         = 'ATFOpenAdSDK'
   s.version      = '1.1.0.2'
-  s.summary      = 'Open Ad ATFOGroMoreAdapter'
+  s.summary      = 'Open Ad SDK'
   s.homepage     = 'https://cxwlad.com/'
   s.license      = {
     :type => 'Copyright',
@@ -12,15 +12,14 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '11.0'
   s.swift_version = '5.0'
   s.authors      = { 'cxwl' => 'cxwl@cxwlad.com' }
-  s.source       = { :http => 'http://47.94.123.42:8081/repository/atfo-sdk-static/Public/SDK/1.1.0.2/ATFOGroMoreAdapter.zip' }
-  s.dependency 'ATFOpenAdSDK', '~> 1.1.0.1'
-  s.dependency 'PTGAdFramework', '2.2.80'
-  s.dependency 'PTGGroMoreAdapter','2.2.80.0'
-  s.dependency 'MSMobAdSDK/MS','2.7.2.1'
-  s.dependency 'MSMobAdSDK/CSJMMeiShuAdapter','2.7.2.1'
-  s.dependency 'Ads-CN/BUAdSDK', '6.9.1.2'
-  s.dependency 'Ads-CN/CSJMediation', '6.9.1.2'
-  s.vendored_frameworks = 'ATFOGroMoreAdapter.framework'
+  s.source       = { :http => 'http://47.94.123.42:8081/repository/atfo-sdk-static/Public/SDK/1.1.0.2/ATFOpenAdSDK.zip' }
+  s.vendored_frameworks = 'ATFOpenAdSDK.framework'
+  s.resource_bundles = {
+    'ATFOCore' => ['ATFOCore.bundle']
+  }
+  s.dependency 'CocoaLumberjack', '~> 3.8.0'
+  s.dependency 'SDWebImage', '~> 3.7.6'
+  s.frameworks = 'UIKit', 'Security', 'JavaScriptCore', 'AssetsLibrary', 'Photos', 'StoreKit', 'QuartzCore', 'SystemConfiguration', 'CoreTelephony', 'CoreGraphics', 'Foundation', 'AdSupport', 'AudioToolbox', 'CFNetwork'
   s.libraries = 'bz2'
   s.requires_arc = true
   s.xcconfig   =  {'OTHER_LDFLAGS' => '-lObjC' }

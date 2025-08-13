@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.swift_version = '5.0'
   s.authors      = { 'cxwl' => 'cxwl@cxwlad.com' }
   s.source       = { :http => 'http://47.94.123.42:8081/repository/atfo-sdk-static/Public/SDK/1.1.0.1/ATFOGDTAdapter.zip' }
-  s.dependency 'ATFOpenAdSDK', '1.1.0.1'
+  s.dependency 'ATFOpenAdSDK', '~> 1.1.0.1'
   s.dependency 'GDTMobSDK', '4.15.40'
   s.vendored_frameworks = 'ATFOGDTAdapter.framework'
   s.libraries = 'bz2'
