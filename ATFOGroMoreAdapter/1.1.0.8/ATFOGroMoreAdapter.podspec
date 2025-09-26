@@ -1,0 +1,32 @@
+Pod::Spec.new do |s|
+  s.name         = 'ATFOGroMoreAdapter'
+  s.version      = '1.1.0.8'
+  s.summary      = 'Open Ad ATFOGroMoreAdapter'
+  s.homepage     = 'https://cxwlad.com/'
+  s.license      = {
+    :type => 'Copyright',
+    :text => <<-LICENSE
+              © 2025-2026 cxwl. All rights reserved.
+    LICENSE
+  }
+  s.ios.deployment_target = '11.0'
+  s.swift_version = '5.0'
+  s.authors      = { 'cxwl' => 'cxwl@cxwlad.com' }
+  s.source       = { :http => 'https://maven.cxwlad.com/repository/atfo-sdk-static/Public/SDK/1.1.0.8/ATFOGroMoreAdapter.zip' }
+  s.dependency 'ATFOpenAdSDK', '~> 1.1.0.6'
+  s.dependency 'PTGAdFramework', '2.2.80'
+  s.dependency 'PTGGroMoreAdapter','2.2.80.0'
+  s.dependency 'MSMobAdSDK/MS','2.7.2.1'
+  s.dependency 'MSMobAdSDK/CSJMMeiShuAdapter','2.7.2.1'
+  s.dependency 'Ads-CN/BUAdSDK', '6.9.1.2'
+  s.dependency 'Ads-CN/CSJMediation', '6.9.1.2'
+  s.vendored_frameworks = 'ATFOGroMoreAdapter.framework'
+  s.libraries = 'bz2'
+  s.requires_arc = true
+  s.xcconfig   =  {'OTHER_LDFLAGS' => '-lObjC' }
+  s.pod_target_xcconfig = {
+    'OTHER_SWIFT_FLAGS' => '-Xcc -Wno-error=non-modular-include-in-framework-module',
+    'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES'
+  }
+
+end
