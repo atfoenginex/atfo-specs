@@ -14,9 +14,7 @@ Pod::Spec.new do |s|
   s.authors      = { 'cxwl' => 'cxwl@cxwlad.com' }
   s.source       = { :http => 'https://maven.cxwlad.com/repository/atfo-sdk-static/Public/SDK/1.1.0.5/ATFOpenAdSDK.zip' }
   s.vendored_frameworks = 'ATFOpenAdSDK.framework'
-  s.resource_bundles = {
-    'ATFOCore' => ['ATFOCore.bundle']
-  }
+  s.resources = 'ATFOCore.bundle'
   s.dependency 'CocoaLumberjack', '~> 3.8.0'
   s.dependency 'SDWebImage', '~> 3.7.6'
   s.frameworks = 'UIKit', 'Security', 'JavaScriptCore', 'AssetsLibrary', 'Photos', 'StoreKit', 'QuartzCore', 'SystemConfiguration', 'CoreTelephony', 'CoreGraphics', 'Foundation', 'AdSupport', 'AudioToolbox', 'CFNetwork'
