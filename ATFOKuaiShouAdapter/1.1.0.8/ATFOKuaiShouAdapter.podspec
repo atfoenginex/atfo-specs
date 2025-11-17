@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.authors      = { 'cxwl' => 'cxwl@cxwlad.com' }
   s.source       = { :http => 'https://maven.cxwlad.com/repository/atfo-sdk-static/Public/SDK/1.1.0.8/ATFOKuaiShouAdapter.zip' }
   s.dependency 'ATFOpenAdSDK', '~> 1.2.0.0'
-  s.dependency 'KSAdSDK', '4.9.20.1'
+  s.dependency 'KSAdSDK', '4.9.20.3'
   s.vendored_frameworks = 'ATFOKuaiShouAdapter.framework'
   s.libraries = 'bz2'
   s.requires_arc = true
