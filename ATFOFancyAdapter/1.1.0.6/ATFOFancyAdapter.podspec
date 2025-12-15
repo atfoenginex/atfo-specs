@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
     s.authors      = { 'cxwl' => 'cxwl@cxwl.com' }
     s.source       = { :http => 'https://maven.cxwlad.com/repository/atfo-sdk-static/Public/SDK/1.1.0.6/ATFOFancyAdapter.zip' }
     s.dependency 'ATFOpenAdSDK', '~> 1.2.0.0'
-    s.dependency 'PTGAdFramework', '2.2.93'
+    s.dependency 'PTGAdFramework', '2.2.84'
     s.vendored_frameworks = 'ATFOFancyAdapter.framework'
     s.libraries = 'bz2'
     s.requires_arc = true
