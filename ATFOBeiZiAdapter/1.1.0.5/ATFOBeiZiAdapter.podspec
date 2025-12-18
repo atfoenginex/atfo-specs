@@ -1,8 +1,8 @@
 Pod::Spec.new do |s|
-  s.name         = 'ATFOMeiShuAdapter'
-  s.version      = '1.2.0.0'
-  s.summary      = 'Open Ad MeiShu Adapter'
-  s.homepage     = 'https://cxwl.com/'
+  s.name         = 'ATFOBeiZiAdapter'
+  s.version      = '1.1.0.5'
+  s.summary      = 'Open Ad BeiZi Adapter'
+  s.homepage     = 'https://cxwlad.com/'
   s.license      = {
     :type => 'Copyright',
     :text => <<-LICENSE
@@ -11,11 +11,11 @@ Pod::Spec.new do |s|
   }
   s.ios.deployment_target = '11.0'
   s.swift_version = '5.0'
-  s.authors      = { 'cxwl' => 'datu@cxwl.com' }
-  s.source       = { :http => 'https://maven.cxwlad.com/repository/atfo-sdk-static/Public/SDK/1.2.0.0/ATFOMeiShuAdapter.zip' }
-  s.dependency 'ATFOpenAdSDK', '~> 1.2.0.0'
-  s.dependency 'MSMobAdSDK/MS', '2.7.11.1'
-  s.vendored_frameworks = 'ATFOMeiShuAdapter.framework'
+  s.authors      = { 'cxwl' => 'cxwl@cxwlad.com' }
+  s.source       = { :http => 'https://maven.cxwlad.com/repository/atfo-sdk-static/Public/SDK/1.1.0.5/ATFOBeiZiAdapter.zip' }
+  s.dependency 'ATFOpenAdSDK', '~> 1.2.0'
+  s.dependency 'BeiZiSDK-iOS/BeiZiSDK-iOS', '4.90.7.0'
+  s.vendored_frameworks = 'ATFOBeiZiAdapter.framework'
   s.libraries = 'bz2'
   s.requires_arc = true
   s.xcconfig   =  {'OTHER_LDFLAGS' => '-lObjC' }
@@ -25,4 +25,3 @@ Pod::Spec.new do |s|
   }
 
 end
-
