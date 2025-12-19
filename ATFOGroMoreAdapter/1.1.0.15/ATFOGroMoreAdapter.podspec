@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.swift_version = '5.0'
   s.authors      = { 'cxwl' => 'cxwl@cxwlad.com' }
   s.source       = { :http => 'https://maven.cxwlad.com/repository/atfo-sdk-static/Public/SDK/1.1.0.15/ATFOGroMoreAdapter.zip' }
-  s.dependency 'ATFOpenAdSDK', '~> 1.2.0.0'
+  s.dependency 'ATFOpenAdSDK', '~> 1.2.0'
   s.dependency 'Ads-CN/BUAdSDK', '7.2.0.9'
   s.dependency 'Ads-CN/CSJMediation', '7.2.0.9'
   s.vendored_frameworks = 'ATFOGroMoreAdapter.framework'

@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.swift_version = '5.0'
   s.authors      = { 'cxwl' => 'cxwl@cxwlad.com' }
   s.source       = { :http => 'https://maven.cxwlad.com/repository/atfo-sdk-static/Public/SDK/1.1.0.9/ATFOBaiduAdapter.zip' }
-  s.dependency 'ATFOpenAdSDK', '~> 1.2.0.0'
+  s.dependency 'ATFOpenAdSDK', '~> 1.2.0'
   s.dependency 'BaiduMobAdSDK', '10.022'
   s.vendored_frameworks = 'ATFOBaiduAdapter.framework'
   s.libraries = 'bz2'
