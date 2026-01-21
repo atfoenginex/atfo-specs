@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.swift_version = '5.0'
   s.authors      = { 'cxwl' => 'cxwl@cxwlad.com' }
   s.source       = { :http => 'https://maven.cxwlad.com/repository/atfo-sdk-static/Public/SDK/1.2.4.6/ATFOpenAdSDK.zip' }
-  s.vendored_frameworks = 'ATFOpenAdSDK.framework'
+  s.vendored_frameworks = 'ATFOpenAdSDK.xcframework'
   s.resources = 'ATFOCore.bundle'
   s.dependency 'CocoaLumberjack', '~> 3.8.0'
   s.dependency 'SDWebImage', '~> 5.18'
