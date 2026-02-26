@@ -17,7 +17,13 @@ Pod::Spec.new do |s|
   s.dependency "YYModel"
   s.dependency "SDWebImage"
   s.dependency "AFNetworking"
-  s.vendored_frameworks = 'ATFONoahAdapter.framework'
+  s.vendored_frameworks = [
+    'ATFONoahAdapter.framework'
+    'NoahAdSdks/NoahSDK.framework'
+    'NoahAdSdks/Ads/hc/ShuQiHCSDK.framework'
+    'NoahAdSdks/Other/ATokenSDK.framework'
+    'NoahAdSdks/Other/UTDID.framework'
+  ]
   s.libraries = 'c++abi', 'sqlite3', 'c++', 'xml2', 'resolv', 'bz2.1.0', 'z', 'resolv.9'
   s.frameworks = 'UIKit', 'Foundation', 'CoreTelephony', 'SystemConfiguration', 'WebKit', 'ImageIO', 'Accelerate', 'Photos', 'AssetsLibrary', 'CoreServices', 'AddressBook', 'AVKit', 'CoreData', 'Security', 'CoreGraphics', 'MobileCoreServices', 'MessageUI', 'SafariServices', 'StoreKit', 'AVFoundation', 'MediaPlayer', 'JavaScriptCore', 'QuickLook', 'CoreMotion', 'CoreMedia', 'CoreLocation', 'MapKit', 'AdSupport', 'AppTrackingTransparency'
   s.weak_frameworks = 'DeviceCheck'
