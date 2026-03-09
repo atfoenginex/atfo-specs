@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   ]
   s.libraries = 'c++abi', 'sqlite3', 'c++', 'xml2', 'resolv', 'bz2.1.0', 'z', 'resolv.9'
   s.frameworks = 'UIKit', 'Foundation', 'CoreTelephony', 'SystemConfiguration', 'WebKit', 'ImageIO', 'Accelerate', 'Photos', 'AssetsLibrary', 'CoreServices', 'AddressBook', 'AVKit', 'CoreData', 'Security', 'CoreGraphics', 'MobileCoreServices', 'MessageUI', 'SafariServices', 'StoreKit', 'AVFoundation', 'MediaPlayer', 'JavaScriptCore', 'QuickLook', 'CoreMotion', 'CoreMedia', 'CoreLocation', 'MapKit', 'AdSupport', 'AppTrackingTransparency'
-  s.resources = 'ATFOpenAdSDK/Classes/Noah/Frameworks/NoahAdSdks/**/*.bundle'
+  s.resources = 'NoahAdSdks/**/*.bundle'
   s.weak_frameworks = 'DeviceCheck'
   s.requires_arc = true
   s.xcconfig   =  {'OTHER_LDFLAGS' => '-lObjC' }
