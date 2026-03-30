@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '11.0'
   s.swift_version = '5.0'
   s.authors      = { 'cxwl' => 'cxwl@cxwlad.com' }
-  s.source       = { :http => 'https://maven.cxwlad.com/repository/atfo-sdk-static/Public/SDK/1.1.0.10/ATFOKuaiShouAdapter.zip' }
+  s.source       = { :http => 'https://maven.cxwlad.com/repository/atfo-sdk-static/Public/SDK/1.1.1.0/ATFOKuaiShouAdapter.zip' }
   s.dependency 'ATFOpenAdSDK', '~> 1.2.0'
   s.dependency 'KSAdSDK', '5.1.20.1'
   s.vendored_frameworks = 'ATFOKuaiShouAdapter.framework'
