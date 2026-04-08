@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '11.0'
   s.swift_version = '5.0'
   s.authors      = { 'cxwl' => 'cxwl@cxwlad.com' }
-  s.source       = { :http => 'https://maven.cxwlad.com/repository/atfo-sdk-static/Public/SDK/1.2.5.5/ATFOpenAdSDK.zip' }
+  s.source       = { :http => 'https://maven.cxwlad.com/repository/atfo-sdk-static/Public/SDK/1.2.5.6/ATFOpenAdSDK.zip' }
   # 默认安装保留完整日志能力；只装 Core 时不引入 CocoaLumberjack
   s.default_subspecs = 'Core', 'Logger'
   s.frameworks = 'UIKit', 'Security', 'JavaScriptCore', 'AssetsLibrary', 'Photos', 'StoreKit', 'QuartzCore', 'SystemConfiguration', 'CoreTelephony', 'CoreGraphics', 'Foundation', 'AdSupport', 'AudioToolbox', 'CFNetwork'
