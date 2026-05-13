@@ -21,6 +21,7 @@ Pod::Spec.new do |s|
     'OneAdSDK.framework',
     'ATokenSDK.xcframework'
   ]
+  s.resources = 'OneAdSDK.framework/XrsImage.bundle'
 
   s.frameworks = 'UIKit',
                  'Foundation',
