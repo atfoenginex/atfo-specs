@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
 
   # Core：二进制主框架 + 资源，不额外拉 CocoaLumberjack
   s.subspec 'Core' do |core|
-    core.vendored_frameworks = 'ATFOpenAdSDK.framework'
+    core.vendored_frameworks = 'ATFOpenAdSDK.xcframework'
     core.resources = 'ATFOCore.bundle'
   end
 
