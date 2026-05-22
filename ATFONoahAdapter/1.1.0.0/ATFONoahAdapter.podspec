@@ -32,9 +32,9 @@ Pod::Spec.new do |s|
 
     core.vendored_frameworks = [
       'ATFONoahAdapter.xcframework',
-      'NoahAdSdks/NoahSDK.xcframework',
-      'NoahAdSdks/Ads/hc/ShuQiHCSDK.xcframework',
-      'NoahAdSdks/AToken/ATokenSDK.xcframework',
+      'NoahAdSdks/NoahSDK.framework',
+      'NoahAdSdks/Ads/hc/ShuQiHCSDK.framework',
+      'NoahAdSdks/AToken/ATokenSDK.framework',
     ]
 
     core.resources = 'NoahAdSdks/**/*.bundle'
@@ -45,6 +45,6 @@ Pod::Spec.new do |s|
 
   s.subspec 'UTDID' do |utd|
     utd.dependency 'ATFONoahAdapter/Core'
-    utd.vendored_frameworks = 'NoahAdSdks/UTDID/UTDID.xcframework'
+    utd.vendored_frameworks = 'NoahAdSdks/UTDID/UTDID.framework'
   end
 end
