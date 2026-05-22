@@ -32,12 +32,12 @@ Pod::Spec.new do |s|
 
     core.vendored_frameworks = [
       'ATFONoahAdapter.xcframework',
-      'NoahAdSdks/NoahSDK.framework',
-      'NoahAdSdks/Ads/hc/ShuQiHCSDK.framework',
-      'NoahAdSdks/AToken/ATokenSDK.framework',
+      'NoahSDK.framework',
+      'ShuQiHCSDK.framework',
+      'ATokenSDK.framework',
     ]
 
-    core.resources = 'NoahAdSdks/**/*.bundle'
+    core.resources = '**/*.bundle'
     core.frameworks = 'UIKit', 'Foundation', 'CoreTelephony', 'SystemConfiguration', 'WebKit', 'ImageIO', 'Accelerate', 'Photos', 'AssetsLibrary', 'CoreServices', 'AddressBook', 'AVKit', 'CoreData', 'Security', 'CoreGraphics', 'MobileCoreServices', 'MessageUI', 'SafariServices', 'StoreKit', 'AVFoundation', 'MediaPlayer', 'JavaScriptCore', 'QuickLook', 'CoreMotion', 'CoreMedia', 'CoreLocation', 'MapKit', 'AdSupport', 'AppTrackingTransparency'
     core.weak_frameworks = 'DeviceCheck'
     core.libraries = 'c++abi', 'sqlite3', 'c++', 'xml2', 'resolv', 'bz2.1.0', 'z', 'resolv.9'
@@ -45,6 +45,6 @@ Pod::Spec.new do |s|
 
   s.subspec 'UTDID' do |utd|
     utd.dependency 'ATFONoahAdapter/Core'
-    utd.vendored_frameworks = 'NoahAdSdks/UTDID/UTDID.framework'
+    utd.vendored_frameworks = 'UTDID.framework'
   end
 end
