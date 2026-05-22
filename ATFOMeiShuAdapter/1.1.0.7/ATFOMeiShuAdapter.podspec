@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   s.name         = 'ATFOMeiShuAdapter'
   s.version      = '1.1.0.7'
   s.summary      = 'Open Ad MeiShu Adapter'
-  s.homepage     = 'https://cxwl.com/'
+  s.homepage     = 'https://cxwlad.com/'
   s.license      = {
     :type => 'Copyright',
     :text => <<-LICENSE
@@ -11,11 +11,11 @@ Pod::Spec.new do |s|
   }
   s.ios.deployment_target = '11.0'
   s.swift_version = '5.0'
-  s.authors      = { 'cxwl' => 'datu@cxwl.com' }
+  s.authors      = { 'cxwl' => 'cxwl@cxwlad.com' }
   s.source       = { :http => 'https://maven.cxwlad.com/repository/atfo-sdk-static/Public/SDK/1.1.0.7/ATFOMeiShuAdapter.zip' }
   s.dependency 'ATFOpenAdSDK', '~> 1.2.0'
   s.dependency 'MSMobAdSDK/MS', '2.7.14.2'
-  s.vendored_frameworks = 'ATFOMeiShuAdapter.framework'
+  s.vendored_frameworks = 'ATFOMeiShuAdapter.xcframework'
   s.libraries = 'bz2'
   s.requires_arc = true
   s.xcconfig   =  {'OTHER_LDFLAGS' => '-lObjC' }
@@ -23,6 +23,4 @@ Pod::Spec.new do |s|
     'OTHER_SWIFT_FLAGS' => '-Xcc -Wno-error=non-modular-include-in-framework-module',
     'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES'
   }
-
 end
-

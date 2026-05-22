@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.source       = { :http => 'https://maven.cxwlad.com/repository/atfo-sdk-static/Public/SDK/1.1.0.5/ATFOBeiZiAdapter.zip' }
   s.dependency 'ATFOpenAdSDK', '~> 1.2.0'
   s.dependency 'BeiZiSDK-iOS/BeiZiSDK-iOS', '5.0.0.2'
-  s.vendored_frameworks = 'ATFOBeiZiAdapter.framework'
+  s.vendored_frameworks = 'ATFOBeiZiAdapter.xcframework'
   s.libraries = 'bz2'
   s.requires_arc = true
   s.xcconfig   =  {'OTHER_LDFLAGS' => '-lObjC' }
@@ -23,5 +23,4 @@ Pod::Spec.new do |s|
     'OTHER_SWIFT_FLAGS' => '-Xcc -Wno-error=non-modular-include-in-framework-module',
     'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES'
   }
-
 end

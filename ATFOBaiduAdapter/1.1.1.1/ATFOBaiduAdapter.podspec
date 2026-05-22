@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name         = 'ATFOBaiduAdapter'
   s.version      = '1.1.1.1'
-  s.summary      = 'Open Ad ATFOBaiduAdapter'
+  s.summary      = 'Open Ad Baidu Adapter'
   s.homepage     = 'https://cxwlad.com/'
   s.license      = {
     :type => 'Copyright',
@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.source       = { :http => 'https://maven.cxwlad.com/repository/atfo-sdk-static/Public/SDK/1.1.1.1/ATFOBaiduAdapter.zip' }
   s.dependency 'ATFOpenAdSDK', '~> 1.2.0'
   s.dependency 'BaiduMobAdSDK', '10.050'
-  s.vendored_frameworks = 'ATFOBaiduAdapter.framework'
+  s.vendored_frameworks = 'ATFOBaiduAdapter.xcframework'
   s.libraries = 'bz2'
   s.requires_arc = true
   s.xcconfig   =  {'OTHER_LDFLAGS' => '-lObjC' }
@@ -23,5 +23,4 @@ Pod::Spec.new do |s|
     'OTHER_SWIFT_FLAGS' => '-Xcc -Wno-error=non-modular-include-in-framework-module',
     'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES'
   }
-
 end

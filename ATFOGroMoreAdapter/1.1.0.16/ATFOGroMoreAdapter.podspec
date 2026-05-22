@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name         = 'ATFOGroMoreAdapter'
   s.version      = '1.1.0.16'
-  s.summary      = 'Open Ad ATFOGroMoreAdapter'
+  s.summary      = 'Open Ad GroMore Adapter'
   s.homepage     = 'https://cxwlad.com/'
   s.license      = {
     :type => 'Copyright',
@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.dependency 'ATFOpenAdSDK', '~> 1.2.0'
   s.dependency 'Ads-CN/BUAdSDK', '7.2.0.9'
   s.dependency 'Ads-CN/CSJMediation', '7.2.0.9'
-  s.vendored_frameworks = 'ATFOGroMoreAdapter.framework'
+  s.vendored_frameworks = 'ATFOGroMoreAdapter.xcframework'
   s.libraries = 'bz2'
   s.requires_arc = true
   s.xcconfig   =  {'OTHER_LDFLAGS' => '-lObjC' }
@@ -24,5 +24,4 @@ Pod::Spec.new do |s|
     'OTHER_SWIFT_FLAGS' => '-Xcc -Wno-error=non-modular-include-in-framework-module',
     'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES'
   }
-
 end

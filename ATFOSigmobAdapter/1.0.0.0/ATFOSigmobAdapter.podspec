@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
-  s.name         = 'ATFOGDTAdapter'
-  s.version      = '1.1.0.10'
-  s.summary      = 'Open Ad GDT Adapter'
+  s.name         = 'ATFOSigmobAdapter'
+  s.version      = '1.0.0.0'
+  s.summary      = 'Open Ad Sigmob Adapter'
   s.homepage     = 'https://cxwlad.com/'
   s.license      = {
     :type => 'Copyright',
@@ -12,13 +12,13 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '11.0'
   s.swift_version = '5.0'
   s.authors      = { 'cxwl' => 'cxwl@cxwlad.com' }
-  s.source       = { :http => 'https://maven.cxwlad.com/repository/atfo-sdk-static/Public/SDK/1.1.0.10/ATFOGDTAdapter.zip' }
+  s.source       = { :http => 'https://maven.cxwlad.com/repository/atfo-sdk-static/Public/SDK/1.0.0.0/ATFOSigmobAdapter.zip' }
   s.dependency 'ATFOpenAdSDK', '~> 1.2.0'
-  s.dependency 'GDTMobSDK', '4.15.60'
-  s.vendored_frameworks = 'ATFOGDTAdapter.xcframework'
-  s.libraries = 'bz2'
+  s.dependency 'SigmobAd-iOS', '4.12.1'
+  s.vendored_frameworks = 'ATFOSigmobAdapter.xcframework'
+  s.libraries = 'bz2', 'z', 'sqlite3'
   s.requires_arc = true
-  s.xcconfig   =  {'OTHER_LDFLAGS' => '-lObjC' }
+  s.xcconfig   =  {'OTHER_LDFLAGS' => '-ObjC' }
   s.pod_target_xcconfig = {
     'OTHER_SWIFT_FLAGS' => '-Xcc -Wno-error=non-modular-include-in-framework-module',
     'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES'

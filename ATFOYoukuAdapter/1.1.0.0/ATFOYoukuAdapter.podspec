@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'ATFOYoukuAdapter'
-  s.version      = '1.0.0.1'
+  s.version      = '1.1.0.0'
   s.summary      = 'Open Ad Youku Adapter'
   s.homepage     = 'https://cxwlad.com/'
   s.license      = {
@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '11.0'
   s.swift_version = '5.0'
   s.authors      = { 'cxwl' => 'datu@cxwl.com' }
-  s.source       = { :http => 'https://maven.cxwlad.com/repository/atfo-sdk-static/Public/SDK/1.0.0.1/ATFOYoukuAdapter.zip' }
+  s.source       = { :http => 'https://maven.cxwlad.com/repository/atfo-sdk-static/Public/SDK/1.1.0.0/ATFOYoukuAdapter.zip' }
 
   s.dependency 'ATFOpenAdSDK', '~> 1.2.0'
 
