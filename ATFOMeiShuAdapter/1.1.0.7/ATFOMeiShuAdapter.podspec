@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.source       = { :http => 'https://maven.cxwlad.com/repository/atfo-sdk-static/Public/SDK/1.1.0.7/ATFOMeiShuAdapter.zip' }
   s.dependency 'ATFOpenAdSDK', '~> 1.2.0'
   s.dependency 'MSMobAdSDK/MS', '2.7.14.2'
-  s.vendored_frameworks = 'ATFOMeiShuAdapter.xcframework'
+  s.vendored_frameworks = 'ATFOMeiShuAdapter.framework'
   s.libraries = 'bz2'
   s.requires_arc = true
   s.xcconfig   =  {'OTHER_LDFLAGS' => '-lObjC' }
