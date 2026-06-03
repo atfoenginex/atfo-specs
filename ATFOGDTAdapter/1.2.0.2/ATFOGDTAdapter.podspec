@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.authors      = { 'cxwl' => 'cxwl@cxwlad.com' }
   s.source       = { :http => 'https://maven.cxwlad.com/repository/atfo-sdk-static/Public/SDK/1.2.0.2/ATFOGDTAdapter.zip' }
   s.dependency 'ATFOpenAdSDK', '~> 1.2.0'
-  s.dependency 'GDTMobSDK', '4.15.60.1'
+  s.dependency 'GDTMobSDK', '4.15.60'
   s.vendored_frameworks = 'ATFOGDTAdapter.xcframework'
   s.libraries = 'bz2'
   s.requires_arc = true
