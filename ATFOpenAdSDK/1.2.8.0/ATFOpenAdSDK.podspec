@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   }
 
   s.subspec 'Core' do |core|
-    core.vendored_frameworks = 'ATFOpenAdSDK.xcframework'
+    core.vendored_frameworks = ['ATFOpenAdSDK.xcframework', 'AvroCXCF.xcframework']
     core.resources = 'ATFOCore.bundle'
   end
 
