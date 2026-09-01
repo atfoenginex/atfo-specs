@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.authors      = { 'cxwl' => 'cxwl@cxwlad.com' }
   s.source       = { :http => 'https://maven.cxwlad.com/repository/atfo-sdk-static/Public/SDK/1.2.0.6/ATFOBeiZiAdapter.zip' }
   s.dependency 'ATFOpenAdSDK', '~> 1.2.0'
-  s.dependency 'BeiZiSDK-iOS/BeiZiSDK-iOS', '5.5.2.0'
+  s.dependency 'BeiZiSDK-iOS/BeiZiSDK-iOS', '5.5.4.2'
   s.vendored_frameworks = 'ATFOBeiZiAdapter.xcframework'
   s.libraries = 'bz2'
   s.requires_arc = true
