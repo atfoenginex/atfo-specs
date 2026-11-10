@@ -1,0 +1,50 @@
+{
+  "name": "ATFOAdsSDK",
+  "version": "3.0.0",
+  "summary": "ATFO Ads SDK",
+  "homepage": "https://cxwl.com/",
+  "license": {
+    "type": "Copyright",
+    "text": "© 2026 cxwl. All rights reserved.\n"
+  },
+  "platforms": {
+    "ios": "15.0"
+  },
+  "swift_versions": "5.0",
+  "authors": {
+    "cxwl": "datu@cxwl.com"
+  },
+  "source": {
+    "http": "https://maven.cxwlad.com/repository/atfo-sdk-static/Public/SDK/3.0.0/ATFOAdsSDK.zip"
+  },
+  "resource_bundles": {
+    "ATFOAdsSDKPrivacy": [
+      "PrivacyInfo.xcprivacy"
+    ]
+  },
+  "frameworks": [
+    "Foundation",
+    "UIKit",
+    "AVFoundation",
+    "CoreMedia",
+    "CoreLocation",
+    "CryptoKit",
+    "ImageIO",
+    "CoreTelephony",
+    "Network",
+    "SystemConfiguration",
+    "AdSupport",
+    "WebKit",
+    "Security",
+    "CoreMotion",
+    "AudioToolbox",
+    "StoreKit"
+  ],
+  "weak_frameworks": [
+    "AppTrackingTransparency",
+    "MetricKit"
+  ],
+  "requires_arc": true,
+  "swift_version": "5.0",
+  "vendored_frameworks": "ATFOAdsSDK.xcframework"
+}
