@@ -1,0 +1,40 @@
+{
+  "name": "ATFOAdsTopOnAdapter",
+  "version": "6.6.11.0.0.2",
+  "summary": "ATFO Ads SDK 的 TopOn 适配器",
+  "homepage": "https://cxwl.com/",
+  "license": {
+    "type": "Copyright",
+    "text": "© 2026 cxwl. All rights reserved.\n"
+  },
+  "platforms": {
+    "ios": "15.0"
+  },
+  "swift_versions": "5.0",
+  "authors": {
+    "cxwl": "datu@cxwl.com"
+  },
+  "source": {
+    "http": "https://maven.cxwlad.com/repository/atfo-sdk-static/Public/SDK/6.6.11.0.0.2/ATFOAdsTopOnAdapter.zip"
+  },
+  "resource_bundles": {
+    "ATFOAdsTopOnAdapterPrivacy": [
+      "PrivacyInfo.xcprivacy"
+    ]
+  },
+  "requires_arc": true,
+  "dependencies": {
+    "ATFOAdsSDK": [
+      "0.0.2"
+    ],
+    "TPNiOS": [
+      ">= 6.4.96",
+      "< 7.0"
+    ]
+  },
+  "swift_version": "5.0",
+  "vendored_frameworks": "ATFOAdsTopOnAdapter.xcframework",
+  "user_target_xcconfig": {
+    "OTHER_LDFLAGS": "-ObjC"
+  }
+}
